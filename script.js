@@ -6,7 +6,7 @@ function m() {
    if (q == null)
      q = qb;
 
-   fetch('https://api.weatherapi.com/v1/forecast.json?q='+q+'&key=df1745f8c6cc4466bf545635232304&days=2')
+   fetch('https://api.weatherapi.com/v1/forecast.json?q='+q+'&key=df1745f8c6cc4466bf545635232304&days=3')
      .then(response => response.json())
      .then(data => {
          //console.log(data);
@@ -23,6 +23,8 @@ function m() {
 
 function as() {
    op = prompt('Enter 0 for today or 1 for tomorrow:', 0);
+   if (op == null)
+      op = 0;
    cast = fore[op];
    
    document.querySelector('.s1').innerHTML = loc.name+', '+loc.region+', '+loc.country;
