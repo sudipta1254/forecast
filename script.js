@@ -22,7 +22,8 @@ function m() {
 }
 
 function as() {
-   cast = fore[1];
+   op = prompt('Enter 0 for today or 1 for tomorrow:', 0);
+   cast = fore[op];
    
    document.querySelector('.s1').innerHTML = loc.name+', '+loc.region+', '+loc.country;
    document.querySelector('.s2').innerHTML = loc.localtime;
