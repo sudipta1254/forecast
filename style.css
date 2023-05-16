@@ -1,6 +1,7 @@
 body {
     color: White;
     background: Black;
+    font-family: sans-serif, system-ui;
 }
 .d2 {
     line-height: 3;
