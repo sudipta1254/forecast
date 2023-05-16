@@ -1,0 +1,11 @@
+body {
+    color: White;
+    background: Black;
+}
+.d2 {
+    line-height: 3;
+}
+#ico {
+    width: 60px;
+    height: 60px;
+}
