@@ -22,7 +22,7 @@ function m() {
 }
 
 function as() {
-   op = prompt('Enter 0 for today or 1 for tomorrow:', 0);
+   op = prompt('Enter 0 for today, 1 for tomorrow or 2 for tomm+1:', 0);
    if (op == null)
       op = 0;
    cast = fore[op];
@@ -33,7 +33,7 @@ function as() {
    document.querySelector('.s4').innerHTML = cast['date'];
    
    for(i = 0; i < 24; i++) {
-      c1 = cast['hour'][i]['time'];
+      c1 = cast['hour'][i]['time'].split(' ')[1];
       c2 = cast['hour'][i]['temp_c'];
       c3 = cast['hour'][i]['condition']['text'];
       c4 = cast['hour'][i]['condition']['icon'].split('//')[1];
