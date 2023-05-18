@@ -1,7 +1,7 @@
 qb = '20.252346,85.802773';
 
 w = prompt('Enter location:', 'Bhubaneshwar');
-/*if (w != null)
+if (w != null)
   m();
 function m() {
    fetch('https://api.weatherapi.com/v1/forecast.json?q='+w+'&key=df1745f8c6cc4466bf545635232304&days=3')
@@ -54,4 +54,4 @@ function get() {
    w = document.getElementById("txt").value;
    document.querySelector('.d2').innerHTML = '';
    m();
-} */
+} 
