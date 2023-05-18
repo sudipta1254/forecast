@@ -1,8 +1,8 @@
 qb = '20.252346,85.802773';
 
-   w = prompt('Enter location:', 'Bhubaneshwar')
-   if (w != null)
-     m();
+w = prompt('Enter location:', 'Bhubaneshwar')
+if (w != null)
+  m();
 function m() {
    fetch('https://api.weatherapi.com/v1/forecast.json?q='+w+'&key=df1745f8c6cc4466bf545635232304&days=3')
      .then(response => response.json())
@@ -37,35 +37,21 @@ function as() {
       c4 = cast['hour'][i]['condition']['icon'].split(
 
       p = document.createElement('strong');
-
       q = document.createElement('div');
-
       r = document.createElement('br');
-
       p.innerHTML = c1+':- Temperature: '+c2+'℃ Condition: '+c3;
-
       q.style.width = '60px';
-
       q.style.height = '60px';
-
       q.style.background = 'url(http://'+c4+')';
-
       d = document.querySelector('.d2');
-
       d.appendChild(p);
-
       d.appendChild(q);
-
       d.appendChild(r); 
    }
 }
 
 function get() {
-
    w = document.getElementById("txt").value;
-
    document.querySelector('.d2').innerHTML = '';
-
    m();
-
 }
