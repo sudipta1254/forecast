@@ -1,6 +1,6 @@
 qb = '20.252346,85.802773';
 
-w = prompt('Enter location:', 'Bhubaneshwar')
+w = prompt('Enter location:', 'Bhubaneshwar');
 if (w != null)
   m();
 function m() {
