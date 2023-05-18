@@ -1,12 +1,10 @@
 qb = '20.252346,85.802773';
 
-// m();
+   w = prompt('Enter location:', 'Bhubaneshwar')
+   if (w != null)
+     m();
 function m() {
-   q = prompt('Enter location:', 'Bhubaneshwar')
-   if (q == null)
-     q = qb;
-
-   fetch('https://api.weatherapi.com/v1/forecast.json?q='+q+'&key=df1745f8c6cc4466bf545635232304&days=3')
+   fetch('https://api.weatherapi.com/v1/forecast.json?q='+w+'&key=df1745f8c6cc4466bf545635232304&days=3')
      .then(response => response.json())
      .then(data => {
          //console.log(data);
