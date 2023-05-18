@@ -34,17 +34,38 @@ function as() {
       c1 = cast['hour'][i]['time'].split(' ')[1];
       c2 = cast['hour'][i]['temp_c'];
       c3 = cast['hour'][i]['condition']['text'];
-      c4 = cast['hour'][i]['condition']['icon'].split('//')[1];
-      document.querySelector('.s'+(i+5)).innerHTML = c1+':- Temperature: '+c2+'℃ Condition: '+c3;
-      document.querySelector('.i'+i).style.background = 'url(http://'+c4+')';
-      
-      // p = document.createElement('strong');
-      // p.innerHTML = c1+':- Temperature: '+c2+'℃ Condition: '+c3;
-      // document.querySelector('.d2').appendChild(p);
+      c4 = cast['hour'][i]['condition']['icon'].split(
+
+      p = document.createElement('strong');
+
+      q = document.createElement('div');
+
+      r = document.createElement('br');
+
+      p.innerHTML = c1+':- Temperature: '+c2+'℃ Condition: '+c3;
+
+      q.style.width = '60px';
+
+      q.style.height = '60px';
+
+      q.style.background = 'url(http://'+c4+')';
+
+      d = document.querySelector('.d2');
+
+      d.appendChild(p);
+
+      d.appendChild(q);
+
+      d.appendChild(r); 
    }
-   
-   /*icon = cur.condition.icon.split('//')[1];
-   d3 = document.querySelector('.d3');
-   d3.style.background = 'url(http://'+icon+')'; */
 }
-m();
+
+function get() {
+
+   w = document.getElementById("txt").value;
+
+   document.querySelector('.d2').innerHTML = '';
+
+   m();
+
+}
