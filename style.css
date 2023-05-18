@@ -1,12 +1,25 @@
 body {
-    color: White;
-    background: Black;
-    font-family: sans-serif, system-ui;
+   color: White;
+   background: Black;
+}
+.d1 {
+   line-height: 2.5;
 }
 .d2 {
-    line-height: 3;
+/*    line-height: 3; */
 }
 #ico {
-    width: 60px;
-    height: 60px;
+   width: 60px;
+   height: 60px;
+}
+input {
+   color: White;
+   background: Black;
+   width: 180px;
+   height: 35px;
+   text-align: center;
+}
+button {
+   height: 30px;
+   margin-left: 10px;
 }
