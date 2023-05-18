@@ -1,33 +1,19 @@
 w = '20.252346,85.802773', op = 0;
 
 function m() {
-
    fetch('https://api.weatherapi.com/v1/forecast.json?q='+w+'&key=df1745f8c6cc4466bf545635232304&days=3')
-
      .then(response => response.json())
-
      .then(data => {
-
          //console.log(data);
-
          loc = data.location;
-
          curr = data.current;
-
          fore = data.forecast.forecastday;
-
          as();
-
      })
-
      .catch(error => {
-
        alert(error);
-
        // Handle errors
-
      }); 
-
 }
 
 function as() {
