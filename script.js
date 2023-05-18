@@ -53,3 +53,55 @@ function as() {
    document.querySelector('.s2').innerHTML = loc.localtime;
 
    document.querySelector('.s3').innerHTML = curr.last_updated;
+
+   document.querySelector('.s4').innerHTML = cast['date'];
+
+   
+
+   for(i = 0; i < 24; i++) {
+
+      c1 = cast['hour'][i]['time'].split(' ')[1];
+
+      c2 = cast['hour'][i]['temp_c'];
+
+      c3 = cast['hour'][i]['condition']['text'];
+
+      c4 = cast['hour'][i]['condition']['icon'].split('//')[1];
+
+      
+
+      p = document.createElement('strong');
+
+      q = document.createElement('div');
+
+      r = document.createElement('br');
+
+      p.innerHTML = c1+':- Temperature: '+c2+'℃ Condition: '+c3;
+
+      q.style.width = '60px';
+
+      q.style.height = '60px';
+
+      q.style.background = 'url(http://'+c4+')';
+
+      d = document.querySelector('.d2');
+
+      d.appendChild(p);
+
+      d.appendChild(q);
+
+      d.appendChild(r); 
+
+   }
+
+}
+
+function get() {
+
+   w = document.getElementById("txt").value;
+
+   document.querySelector('.d2').innerHTML = '';
+
+   m();
+
+}
