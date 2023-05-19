@@ -1,13 +1,12 @@
 body {
    color: White;
    background: Black;
+   font-size: 20px;
+   font-family: 'Italiana';
 }
 .d1 {
    line-height: 2;
    margin-top: 15px;
-}
-.d2 {
-/*    line-height: 3; */
 }
 #ico {
    width: 60px;
@@ -28,4 +27,8 @@ input {
 button {
    height: 30px;
    margin-left: 10px;
+}
+@font-face {
+    font-family: 'Italiana';
+    src: url('Italiana-Regular.woff');
 }
