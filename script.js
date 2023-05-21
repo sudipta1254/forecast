@@ -59,7 +59,7 @@ function time() {
    s = s[0] + s[1];
    c = curr.last_updated.split(' ')[1].split(':');
    c = c[0] + c[1];
-   return +s - d = +s - (+c);
+   d = +s - (+c);
    if (d == 0)
       return 'Now';
    else if (d == 1)
