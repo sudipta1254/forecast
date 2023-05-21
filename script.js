@@ -21,10 +21,9 @@ function as() {
       op = 0;
    cast = fore[op];
 
-   time();
    document.querySelector('.s1').innerHTML = loc.name+', '+loc.region+', '+loc.country;
    document.querySelector('.s2').innerHTML = loc.localtime;
-   document.querySelector('.s3').innerHTML = curr.last_updated+' / '+c+' minutes ago';
+   document.querySelector('.s3').innerHTML = curr.last_updated+' / '+time()+' minutes ago';
    document.querySelector('.s4').innerHTML = cast['date'];
    document.querySelector('.s5').innerHTML = curr['temp_c']+'°C';
 
@@ -57,9 +56,9 @@ function get() {
 
 function time() {
    s = loc.localtime.split(' ')[1].split(':');
-   s = +s[0] + +s[1];
+   s = s[0] + s[1];
    c = curr.last_updated.split(' ')[1].split(':');
-   c = +c[0] + +c[1];
-   c = s - c;
+   c = c[0] + c[1];
+   return +s - (+c);
 }
 m();
