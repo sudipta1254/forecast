@@ -23,7 +23,7 @@ function as() {
 
    document.querySelector('.s1').innerHTML = loc.name+', '+loc.region+', '+loc.country;
    document.querySelector('.s2').innerHTML = loc.localtime;
-   document.querySelector('.s3').innerHTML = curr.last_updated+' / '+time()+' minutes ago';
+   document.querySelector('.s3').innerHTML = curr.last_updated+' / '+time();
    document.querySelector('.s4').innerHTML = cast['date'];
    document.querySelector('.s5').innerHTML = curr['temp_c']+'°C';
 
@@ -31,7 +31,7 @@ function as() {
       c1 = cast['hour'][i]['time'].split(' ')[1];
       c2 = cast['hour'][i]['temp_c'];
       c3 = cast['hour'][i]['condition']['text'];
-      c4 = cast['hour'][i]['condition']['icon'].split('//')[1];
+      c4 = cast['hour'][i]['condition']['icon'];
 
       p = document.createElement('strong');
       q = document.createElement('div');
@@ -39,7 +39,7 @@ function as() {
       p.innerHTML = c1+':- Temperature: '+c2+'°C Condition: '+c3;
       q.style.width = '60px';
       q.style.height = '60px';
-      q.style.background = 'url(http://'+c4+')';
+      q.style.background = 'url(http:'+c4+')';
       d = document.querySelector('.d2');
       d.appendChild(p);
       d.appendChild(q);
@@ -59,6 +59,12 @@ function time() {
    s = s[0] + s[1];
    c = curr.last_updated.split(' ')[1].split(':');
    c = c[0] + c[1];
-   return +s - (+c);
+   return +s - d = +s - (+c);
+   if (d == 0)
+      return 'Now';
+   else if (d == 1)
+      return d+' minute ago';
+   else
+      return d+' minutes ago';
 }
 m();
