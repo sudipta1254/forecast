@@ -60,12 +60,7 @@ function time() {
    c = curr.last_updated.split(' ')[1].split(':');
    c = c[0] + c[1];
    d = +s - (+c);
-   if (d == 0)
-      return 'Now';
-   else if (d == 1)
-      return d+' minute ago';
-   else
-      return d+' minutes ago';
+   return d == 0 ? 'Now' : d == 1 ? d+' minute ago' : d+' minutes ago';
 }
 
 input = document.getElementById("no");
