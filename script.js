@@ -4,7 +4,6 @@ function m() {
    fetch('https://api.weatherapi.com/v1/forecast.json?q='+w+'&key=df1745f8c6cc4466bf545635232304&days=3')
      .then(response => response.json())
      .then(data => {
-         //console.log(data);
          loc = data.location;
          curr = data.current;
          fore = data.forecast.forecastday;
@@ -12,7 +11,6 @@ function m() {
      })
      .catch(error => {
        alert(error);
-       // Handle errors
      }); 
 }
 
@@ -20,10 +18,11 @@ function as() {
    if (op == null || op == '')
       op = 0;
    cast = fore[op];
+   time();
 
    document.querySelector('.s1').innerHTML = loc.name+', '+loc.region+', '+loc.country;
    document.querySelector('.s2').innerHTML = loc.localtime;
-   document.querySelector('.s3').innerHTML = curr.last_updated+' / '+time();
+   document.querySelector('.s3').innerHTML =  (d < 0) ? curr.last_updated : time();
    document.querySelector('.s4').innerHTML = cast['date'];
    document.querySelector('.s5').innerHTML = curr['temp_c']+'°C';
 
