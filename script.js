@@ -133,7 +133,7 @@ alt = () => {
           if (a[i].instruction.length == 0)
              p.innerHTML += `${a[i].desc.split('...')[1]}`;
           if (i < a.length - 1)
-             p.innerHTML += `</strong></stromg><br><br>`;
+             p.innerHTML += `</strong><br><br>`;
            d6.appendChild(p);
        }
     }
