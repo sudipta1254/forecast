@@ -1,32 +1,58 @@
 body {
-   color: White;
-   background: #212121;
-   font-size: 20px;
-   font-family: 'Italiana';
+    color: white ;
+    background: #212121;
+    font-family: Italiana;
+    font-size: 20px;
 }
-.d1 {
-   line-height: 2;
-   margin-top: 15px;
+.d2 {
+    margin: 0 auto;
+    width: 90%;
 }
-#ico {
-   width: 60px;
-   height: 60px;
+.d3 {
+    line-height: 2.5;
+    margin: 10px 10px;
 }
-input {
-   color: White;
-   background: Black;
-   width: 180px;
-   height: 35px;
-   text-align: center;
-   border-radius: 14px;
+.d4 {
+    display: none;
+    line-height: 2.0;
+    margin: 10px 10px;
+}
+.d5, .d6 {
+    line-height: 2.5;
+    margin: 40px 5px;
+}
+.i1 {
+    width: 60px;
+    height: 60px;
+    margin: -330px auto 0;
+}
+#txt, #no {
+    color: White;
+    background: Black;
+    width: 180px;
+    height: 35px;
+    text-align: center;
+    border-radius: 14px;
 }
 #no {
-   width: 50px;
-   margin-left: 10px;
+    width: 50px;
+    margin-left: 10px;
 }
 button {
-   height: 30px;
-   margin-left: 10px;
+    height: 30px;
+    width: 70px;
+    margin-left: 27px;
+    appearance: none;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    border: 1px lightgrey solid;
+}
+button:active {
+   transform: scale(0.9);
+   transition: all 0.4s;
+}
+#check {
+    margin: 19px 45px 0px 0px;
 }
 @font-face {
     font-family: 'Italiana';
