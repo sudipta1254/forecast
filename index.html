@@ -5,21 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Weather Forecast</title>
+    <title>Weather Service</title>
 </head>
-<body oncontextmenu="return false">
-    <div class="d1">
+<body oncontextmenu='return false'>
+    <div class='d1'>
+        <div class='d2'>
            <input type='text' id='txt' placeholder='Location' autofocus></input>
            <input type='number' id='no' placeholder='0 - 2'></input>
-           <button type="button" onclick="get()">Search</button><br>
+           <button type='button' onclick='get()'>Search</button><br>
+           Forecast <input type="checkbox" id="check" class='ck1'>
+           AQI <input type="checkbox" id="check" class='ck2'>
+           Alerts <input type="checkbox" id="check" class='ck3'>
+        </div>
+        <div class='d3'> 
            Location: <strong class="s1"></strong><br>
-           Temperature: <strong class='s5'></strong><br>
            Time: <strong class="s2"></strong><br>
            Last updated: <strong class="s3"></strong><br>
-           Forecast Date: <strong class="s4"></strong><br>
-        <div class="d2"></div>
-     </div>     
+           Temperature: <strong class="s4"></strong><br>
+           Condition: <strong class="s5"></strong><br>
+           Feels like: <strong class="s6"></strong><br>
+           Wind: <strong class="s7"></strong><br>
+           Gust: <strong class="s8"></strong><br>
+           Pressure: <strong class="s9"></strong><br>
+           Precipitation: <strong class="s14"></strong><br>
+           Humidity: <strong class="s10"></strong><br>
+           Cloud: <strong class="s11"></strong><br>
+           Visibility: <strong class="s12"></strong><br>
+           UV: <strong class="s13"></strong><br>
+           <div class='i1'></div>
+        </div>
+        <div class='d4'>
+           Location: <strong class="t1"></strong><br>
+           Temperature: <strong class='t5'></strong><br>
+           Time: <strong class="t2"></strong><br>
+           Last updated: <strong class="t3"></strong><br>
+           Forecast Date: <strong class="t4"></strong>
+           <div class='i2'></div>
+        </div>
+        <div class='d5'></div>
+        <div class='d6'></div>
+     </div>
     <script src="script.js"></script>
 </body>
 </html>
