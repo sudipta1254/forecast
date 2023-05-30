@@ -165,7 +165,7 @@ set = () => {
    setTimeout(set, 0);
 }
 
-input = document.getElementById("no");
+input = document.getElementById("txt");
 input.addEventListener("keypress", function(event) {
   if (event.key === "Enter") {
     event.preventDefault();
