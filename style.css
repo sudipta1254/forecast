@@ -54,6 +54,11 @@ button:active {
 #check {
     margin: 19px 45px 0px 0px;
 }
+.head {
+    margin: 10px auto 20px;
+    text-align: center;
+    text-decoration: underline;
+}
 @font-face {
     font-family: 'Italiana';
     src: url('Italiana-Regular.woff');
