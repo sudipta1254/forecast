@@ -8,7 +8,7 @@ m = () => {
          cur = data.current;
          fore = data.forecast.forecastday;
          alerts = data.alerts;
-         as1();
+         as1(); set();
          ck1 = document.querySelector('.ck1').checked;
          ck2 = document.querySelector('.ck2').checked;
          ck3 = document.querySelector('.ck3').checked;
@@ -155,6 +155,14 @@ time = () => {
    c = c[0] + c[1];
    d = +s - (+c);
    return d == 0 ? 'Now' : d == 1 ? d+' minute ago' : d+' minutes ago';
+}
+
+set = () => {
+   if (document.querySelector('.ck1').checked)
+      document.querySelector('#no').disabled = false;
+   else
+      document.querySelector('#no').disabled = true;
+   setTimeout(set, 0);
 }
 
 input = document.getElementById("no");
