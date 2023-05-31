@@ -8,7 +8,7 @@ m = () => {
          cur = data.current;
          fore = data.forecast.forecastday;
          alerts = data.alerts;
-         as1(); set();
+         as1();
          ck1 = document.querySelector('.ck1').checked;
          ck2 = document.querySelector('.ck2').checked;
          ck3 = document.querySelector('.ck3').checked;
@@ -157,13 +157,12 @@ time = () => {
    return d == 0 ? 'Now' : d == 1 ? d+' minute ago' : d+' minutes ago';
 }
 
-set = () => {
+setInterval(() => {
    if (document.querySelector('.ck1').checked)
       document.querySelector('#no').disabled = false;
    else
       document.querySelector('#no').disabled = true;
-   setTimeout(set, 0);
-}
+}, 0);
 
 input = document.getElementById("txt");
 input.addEventListener("keypress", function(event) {
