@@ -102,12 +102,12 @@ aq = () => {
     d5.style.display = 'block';
     p = document.createElement('p');
     p.innerHTML = `<hr>AQI for <strong>${loc.name}, ${loc.region}, ${loc.country}</strong><br>
-                    CO: <strong>${aqi.co}</strong><br>
-                    NO2: <strong>${aqi.no2}</strong><br>
-                    O3: <strong>${aqi.o3}</strong><br>
-                    SO2: <strong>${aqi.so2}</strong><br>
-                    PM2_5: <strong>${aqi.pm2_5}</strong><br>
-                    PM10: <strong>${aqi.pm10}</strong><br>
+                    CO: <strong>${aqi.co} μg/m3</strong><br>
+                    NO2: <strong>${aqi.no2} μg/m3</strong><br>
+                    O3: <strong>${aqi.o3} μg/m3</strong><br>
+                    SO2: <strong>${aqi.so2} μg/m3</strong><br>
+                    PM2_5: <strong>${aqi.pm2_5} μg/m3</strong><br>
+                    PM10: <strong>${aqi.pm10} μg/m3</strong><br>
                     EPA Index: ${aqi['us-epa-index']}<br>
                     DEFRA Index: ${aqi['gb-defra-index']}<hr><br>`;
     d5.appendChild(p);
