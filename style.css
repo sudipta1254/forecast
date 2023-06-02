@@ -59,6 +59,9 @@ button:active {
     text-align: center;
     text-decoration: underline;
 }
+i {
+    margin-left: 20px;
+}
 @font-face {
     font-family: 'Italiana';
     src: url('Italiana-Regular.woff');
