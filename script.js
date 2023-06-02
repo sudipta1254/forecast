@@ -45,10 +45,16 @@ as1 = () => {
    document.querySelector('.s14').innerHTML = cur.precip_mm+' mm';
 
    icon = cur.condition.icon;
+   day = cur.is_day;
    i1 = document.querySelector('.i1');
+   i = document.querySelector('i');
    i1.style.background = `url(${icon})`;
    if (screen.width <= 768)
       i1.style.margin = '-40px auto 0';
+   if (day == 1)
+      i.className = 'fa-solid fa-sun fa-1x';
+   else
+      i.className = 'fa-solid fa-moon fa-1x';
 }
 
 as2 = () => {
