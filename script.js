@@ -52,9 +52,9 @@ as1 = () => {
    if (screen.width <= 768)
       i1.style.margin = '-40px auto 0';
    if (day == 1)
-      i.className = 'fa-solid fa-sun fa-1x';
+      i.className = 'fa-regular fa-sun fa-1x';
    else
-      i.className = 'fa-solid fa-moon fa-1x';
+      i.className = 'fa-regular fa-moon fa-1x';
 }
 
 as2 = () => {
