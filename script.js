@@ -147,6 +147,10 @@ alt = () => {
 
 get = () => {
    w = document.getElementById("txt").value;
+   if (w == '') {
+      alert('Enter location!');
+      return;
+   }
    op = document.getElementById("no").value;
    document.querySelector('.i2').innerHTML = '';
    document.querySelector('.d5').innerHTML = '';
