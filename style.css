@@ -65,7 +65,7 @@ i {
 
 .spin {
    margin-left: 10px;
-   animation: spin 6s linear infinite;
+   animation: spin 9s linear infinite;
 }
 @-moz-keyframes spin {
     to { -moz-transform: rotate(360deg); }
