@@ -64,6 +64,7 @@ i {
 }
 
 .spin {
+   color: #0095ff;
    margin-left: 10px;
    animation: spin 9s linear infinite;
 }
