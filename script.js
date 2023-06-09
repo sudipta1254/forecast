@@ -128,10 +128,14 @@ alt = () => {
        if (!ck1)
           document.querySelector('.d4').style.display = 'none';
        d6 = document.querySelector('.d6');
+       p1 = document.createElement('p');
+       p1.classList = `head`;
+       p1.innerHTML = `Alerts<span class="fa-solid fa-triangle-exclamation fa-fade"></span>`;
+       d6.appendChild(p1)
        d6.style.display = 'block';
        for(i = 0; i < a.length; i++) {
            p = document.createElement('p');
-           p.innerHTML = `${i+1}. Alert for: <strong>${loc.name}, ${loc.region}, ${loc.country}<hr>
+           p.innerHTML = `${i+1}. <strong>${loc.name}, ${loc.region}, ${loc.country}<hr>
                           ${a[i].headline}<hr>
                            ${a[i].note}<hr>
                            ${a[i].event}<hr>
@@ -140,7 +144,7 @@ alt = () => {
              p.innerHTML += `${a[i].desc.split('...')[1]}`;
           if (i < a.length - 1)
              p.innerHTML += `</strong><br><br>`;
-           d6.appendChild(p);
+          d6.appendChild(p);
        }
     }
 }
