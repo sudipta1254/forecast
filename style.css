@@ -59,6 +59,10 @@ button:active {
     text-align: center;
     text-decoration: underline;
 }
+span {
+    color: red;
+    margin-left: 5px;
+}
 i {
     margin-left: 20px;
     animation: spin 6s infinite;
