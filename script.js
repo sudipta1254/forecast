@@ -80,7 +80,7 @@ as2 = () => {
       p = document.createElement('strong');
       q = document.createElement('div');
       r = document.createElement('br');
-      p.innerHTML = c1+':- Temperature: '+c2+'°C Condition: '+c3;
+      p.innerHTML = c1+':- Temperature: '+c2+'°C<br>Condition: '+c3;
       q.style.width = '60px';
       q.style.height = '60px';
       q.style.background = `url(${c4})`;
