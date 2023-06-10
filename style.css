@@ -64,6 +64,7 @@ span {
     margin-left: 5px;
 }
 i {
+    font-size: 25px;
     margin-left: 20px;
     animation: spin 6s infinite;
 }
