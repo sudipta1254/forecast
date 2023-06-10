@@ -52,7 +52,7 @@ as1 = () => {
    if (screen.width <= 768)
       i1.style.margin = '-40px auto 0';
    if (day == 1)
-      i.className = 'fa-regular fa-sun fa-1x';
+      i.className = 'las la-sun';
    else
       i.className = 'fa-regular fa-moon fa-1x';
 }
