@@ -71,6 +71,16 @@ i {
     margin-left: 20px;
     animation: spin 6s infinite;
 }
+.light {
+    color: black;
+    background: white;
+}
+.thm {
+    position: absolute;
+    top: 3.5%;
+    right: 4%;
+    
+}
 
 .spin {
    color: #0095ff;
