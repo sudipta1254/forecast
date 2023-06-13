@@ -1,4 +1,4 @@
-w = '20.252346,85.802773', op = 0, cnt = 0;
+w = '20.252346,85.802773', op = 0, cnt = 0, j = 0;
 
 m = () => {
    fetch(`https://api.weatherapi.com/v1/forecast.json?q=${w}&key=df1745f8c6cc4466bf545635232304&alerts=yes&aqi=yes&days=3`)
@@ -169,6 +169,24 @@ time = () => {
    c = c[0] + c[1];
    d = +s - (+c);
    return d == 0 ? 'Now' : d == 1 ? d+' minute ago' : d+' minutes ago';
+}
+
+theme = () => {
+   body = document.body;
+   q = document.querySelector('span');
+   i = document.querySelectorAll('input');
+   body.classList.toggle('light')
+   i[0].classList.toggle('light')
+   i[1].classList.toggle('light')
+   q.classList.toggle('mdi')
+   q.classList.toggle('mdi-weather-night')
+   q.classList.toggle('cil') //lnr, cil, las
+   q.classList.toggle('cil-sun') //sun
+   if (j % 2 == 0)
+      q.style.color = 'black';
+   else
+      q.style.color = 'white';
+   j++;
 }
 
 setInterval(() => {
