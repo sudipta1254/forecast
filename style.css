@@ -21,6 +21,9 @@ body {
     line-height: 2.5;
     margin: 40px 5px;
 }
+.d6 {
+    text-align: center;
+}
 .i1 {
     width: 60px;
     height: 60px;
