@@ -107,7 +107,7 @@ aq = () => {
     d5 = document.querySelector('.d5');
     d5.style.display = 'block';
     p = document.createElement('p');
-    p.innerHTML = `<hr>AQI for <strong>${loc.name}, ${loc.region}, ${loc.country}</strong><br>
+    p.innerHTML = `AQI for <strong>${loc.name}, ${loc.region}, ${loc.country}</strong><br>
                     CO: <strong>${aqi.co} μg/m3</strong><br>
                     NO2: <strong>${aqi.no2} μg/m3</strong><br>
                     O3: <strong>${aqi.o3} μg/m3</strong><br>
@@ -130,7 +130,7 @@ alt = () => {
        d6 = document.querySelector('.d6');
        p1 = document.createElement('p');
        p1.classList = `head`;
-       p1.innerHTML = `Alerts<span class="fa-solid fa-triangle-exclamation fa-fade"></span>`;
+       p1.innerHTML = `Alerts<span class="fa-solid fa-triangle-exclamation fa-fade" style='color:red'></span>`;
        d6.appendChild(p1)
        d6.style.display = 'block';
        for(i = 0; i < a.length; i++) {
