@@ -69,7 +69,7 @@ span {
 i {
     font-size: 25px;
     margin-left: 20px;
-    animation: spin 6s infinite;
+    animation: spin1 6s infinite;
 }
 .light {
     color: black;
@@ -96,6 +96,9 @@ i {
 }
 @keyframes spin {
   to { transform: rotate(360deg); }
+}
+@keyframes spin1 {
+  to { transform: rotate(360deg) scale(1.5); }
 }
 
 @font-face {
