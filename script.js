@@ -70,6 +70,13 @@ as2 = () => {
    document.querySelector('.t5').innerHTML = cur.temp_c+'°C';
    document.querySelector('.d3').style.display = 'none';
    document.querySelector('.d4').style.display = 'block';
+   icon = cur.condition.icon;
+   day = cur.is_day;
+   ik = document.querySelectorAll('i');
+   if(day == 1)
+      ik[1].className = 'las la-sun'
+   else
+      ik[1].className = 'fa-regular fa-moon fa-1x';
 
    for(i = 0; i < 24; i++) {
       c1 = cast['hour'][i]['time'].split(' ')[1];
