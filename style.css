@@ -4,6 +4,9 @@ body {
     font-family: Italiana;
     font-size: 20px;
 }
+hr {
+    width: 50%;
+}
 .d2 {
     margin: 0 auto;
     width: 90%;
