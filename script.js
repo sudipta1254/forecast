@@ -24,8 +24,9 @@ m = () => {
      })
      .catch(error => {
        alert(error);
-     });
-} m();
+     }); 
+}
+m();
 
 as1 = () => {
    time();
