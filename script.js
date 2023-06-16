@@ -25,7 +25,7 @@ m = () => {
      .catch(error => {
        alert(error);
      });
-}
+} m();
 
 as1 = () => {
    time();
@@ -211,4 +211,3 @@ input.addEventListener("keypress", function(event) {
   }
 });
 
-m();
