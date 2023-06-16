@@ -123,7 +123,7 @@ aq = () => {
                     PM2.5: <strong>${aqi.pm2_5} μg/m3</strong><br>
                     PM10: <strong>${aqi.pm10} μg/m3</strong><br>
                     EPA Index: ${aqi['us-epa-index']}<br>
-                    DEFRA Index: ${aqi['gb-defra-index']}<hr><br>`;
+                    DEFRA Index: ${aqi['gb-defra-index']}<br>`;
     d5.appendChild(p);
 }
 
