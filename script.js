@@ -187,8 +187,8 @@ theme = () => {
    i[1].classList.toggle('light')
    q.classList.toggle('mdi')
    q.classList.toggle('mdi-weather-night')
-   q.classList.toggle('lnr') //lnr, cil, las
-   q.classList.toggle('lnr-sun') //sun
+   q.classList.toggle('cil') //lnr, cil, las
+   q.classList.toggle('cil-sun') //sun
    if (j % 2 == 0)
       q.style.color = 'black';
    else
