@@ -69,7 +69,7 @@ span {
 i {
     font-size: 25px;
     margin-left: 20px;
-    animation: spin1 6s infinite;
+    animation: spin 6s infinite;
 }
 .light {
     color: black;
