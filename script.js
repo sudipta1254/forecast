@@ -93,7 +93,7 @@ as2 = () => {
       r = document.createElement('br');
       p.innerHTML = c1+':- Temperature: '+c2+'°C<br>Condition: '+c3;
       if ((c4 >= 1063 && c4 <= 1117) || (c4 >= 1150 && c4 <= 1282))
-         p.innerHTML += `<br>Chance:- ${chance} | Probability:- ${prob}`;
+         p.innerHTML += `<br>Chance:- ${chance}% | Probability:- ${prob}`;
       q.style.width = '60px';
       q.style.height = '60px';
       q.style.background = `url(${icon})`;
