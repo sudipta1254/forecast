@@ -80,18 +80,23 @@ as2 = () => {
       ik[1].className = 'fa-regular fa-moon fa-1x';
 
    for(i = 0; i < 24; i++) {
-      c1 = cast['hour'][i]['time'].split(' ')[1];
-      c2 = cast['hour'][i]['temp_c'];
-      c3 = cast['hour'][i]['condition']['text'];
-      c4 = cast['hour'][i]['condition']['icon'];
+      c1 = cast.hour[i].time.split(' ')[1];
+      c2 = cast.hour[i].temp_c;
+      c3 = cast.hour[i].condition.text;
+      c4 = cast.hour[i].condition.code;
+      prob = cast.hour[i].will_it_rain;
+      chance = cast.hour[i].chance_of_rain;
+      icon = cast.hour[i].condition.icon;
   
       p = document.createElement('strong');
       q = document.createElement('div');
       r = document.createElement('br');
       p.innerHTML = c1+':- Temperature: '+c2+'°C<br>Condition: '+c3;
+      if ((c4 >= 1063 && c4 <= 1117) || (c4 >= 1150 && c4 <= 1282))
+         p.innerHTML += `<br>Chance:- ${chance} | Probability:- ${prob}`;
       q.style.width = '60px';
       q.style.height = '60px';
-      q.style.background = `url(${c4})`;
+      q.style.background = `url(${icon})`;
       i2 = document.querySelector('.i2');
       i2.appendChild(p);
       i2.appendChild(q);
