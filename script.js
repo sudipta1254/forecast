@@ -86,6 +86,8 @@ as2 = () => {
       c4 = cast.hour[i].condition.code;
       prob = cast.hour[i].will_it_rain;
       chance = cast.hour[i].chance_of_rain;
+      probS = cast.hour[i].will_it_snow;
+      chanceS = cast.hour[i].chance_of_snow;
       icon = cast.hour[i].condition.icon;
   
       p = document.createElement('strong');
@@ -94,6 +96,8 @@ as2 = () => {
       p.innerHTML = c1+':- Temperature: '+c2+'°C<br>Condition: '+c3;
       if (c4 == 1063 || c4 == 1087 || (c4 >= 1150 && c4 <= 1201) || (c4 >= 1240 && c4 <= 1246) || c4 == 1273 || c4 == 1276)
          p.innerHTML += `<br>Chance:- ${chance}% | Probability:- ${prob}`;
+      else if ((c4 >= 1066 && c4 <= 1072) || c4 == 1114 || c4 == 1117 || (c4 >= 1204 && c4 <= 1237) || (c4 >= 1249 && c4 <= 1264) || c4 == 1279 || c4 == 1282)
+         p.innerHTML += `<br>Chance:- ${chanceS}% | Probability:- ${probS}`;
       q.style.width = '60px';
       q.style.height = '60px';
       q.style.background = `url(${icon})`;
