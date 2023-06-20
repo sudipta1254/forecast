@@ -216,7 +216,7 @@ input.addEventListener("keypress", function(event) {
     document.querySelector("button").click();
   }
 });
-input2 = document.getElementById("txt");
+input2 = document.getElementById("no");
 input2.addEventListener("keypress", function(event) {
   if (event.key === "Enter") {
     event.preventDefault();
