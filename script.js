@@ -12,14 +12,10 @@ m = () => {
          ck1 = document.querySelector('.ck1').checked;
          ck2 = document.querySelector('.ck2').checked;
          ck3 = document.querySelector('.ck3').checked;
-         if (ck1)
-            as2();
-         if (ck2)
-            aq();
-         if (ck3)
-            alt();
-         if (!ck1 && !ck2 && !ck3 && cnt > 0)
-            as3();
+         ck1 && as2();
+         ck2 && aq();
+         ck3 && alt();
+         if (!ck1 && !ck2 && !ck3 && cnt > 0) as3();
          cnt++;
      })
      .catch(error => {
@@ -84,8 +80,8 @@ as2 = () => {
       c2 = cast.hour[i].temp_c;
       c3 = cast.hour[i].condition.text;
       c4 = cast.hour[i].condition.code;
-      prob = cast.hour[i].will_it_rain;
-      chance = cast.hour[i].chance_of_rain;
+      probR = cast.hour[i].will_it_rain;
+      chanceR = cast.hour[i].chance_of_rain;
       probS = cast.hour[i].will_it_snow;
       chanceS = cast.hour[i].chance_of_snow;
       icon = cast.hour[i].condition.icon;
@@ -94,9 +90,9 @@ as2 = () => {
       q = document.createElement('div');
       r = document.createElement('br');
       p.innerHTML = c1+':- Temperature: '+c2+'°C<br>Condition: '+c3;
-      if (c4 == 1063 || c4 == 1087 || (c4 >= 1150 && c4 <= 1201) || (c4 >= 1240 && c4 <= 1246) || c4 == 1273 || c4 == 1276)
-         p.innerHTML += `<br>Chance:- ${chance}% | Probability:- ${prob}`;
-      else if ((c4 >= 1066 && c4 <= 1072) || c4 == 1114 || c4 == 1117 || (c4 >= 1204 && c4 <= 1237) || (c4 >= 1249 && c4 <= 1264) || c4 == 1279 || c4 == 1282)
+      if (c4 == 1063 || c4 == 1087 || c4 == 1069|| (c4 >= 1150 && c4 <= 1207) || (c4 >= 1240 && c4 <= 1252) || c4 == 1273 || c4 == 1276)
+         p.innerHTML += `<br>Chance:- ${chanceR}% | Probability:- ${probR}`;
+      else if ((c4 >= 1066 && c4 <= 1072 && c4 != 1069) || c4 == 1114 || c4 == 1117 || (c4 >= 1210 && c4 <= 1237) || (c4 >= 1255 && c4 <= 1264) || c4 == 1279 || c4 == 1282)
          p.innerHTML += `<br>Chance:- ${chanceS}% | Probability:- ${probS}`;
       q.style.width = '60px';
       q.style.height = '60px';
