@@ -1,4 +1,4 @@
-w = '20.252346,85.802773', op = 0, cnt = 0, j = 0, k = 1, merid = 'AM';
+w = '20.252346,85.802773', op = 0, cnt = 0, j = 0, merid = 'AM';
 
 m = () => {
    fetch(`https://api.weatherapi.com/v1/forecast.json?q=${w}&key=df1745f8c6cc4466bf545635232304&alerts=yes&aqi=yes&days=3`)
@@ -75,7 +75,7 @@ as2 = () => {
    else
       ik[1].className = 'fa-regular fa-moon fa-1x';
 
-   for(i = 0; i < 24; i++) {
+   for(i = 0, k = 1; i < 24; i++) {
       c1 = +cast.hour[i].time.split(' ')[1].split(':')[0];
       c2 = cast.hour[i].temp_c;
       c3 = cast.hour[i].condition.text;
