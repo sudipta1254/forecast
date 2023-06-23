@@ -1,4 +1,4 @@
-w = '20.252346,85.802773', op = 0, cnt = 0, j = 0;
+w = '20.252346,85.802773', op = 0, cnt = 0, j = 0, k = 1, merid = 'AM';
 
 m = () => {
    fetch(`https://api.weatherapi.com/v1/forecast.json?q=${w}&key=df1745f8c6cc4466bf545635232304&alerts=yes&aqi=yes&days=3`)
@@ -76,7 +76,7 @@ as2 = () => {
       ik[1].className = 'fa-regular fa-moon fa-1x';
 
    for(i = 0; i < 24; i++) {
-      c1 = cast.hour[i].time.split(' ')[1];
+      c1 = +cast.hour[i].time.split(' ')[1].split(':')[0];
       c2 = cast.hour[i].temp_c;
       c3 = cast.hour[i].condition.text;
       c4 = cast.hour[i].condition.code;
@@ -85,11 +85,18 @@ as2 = () => {
       probS = cast.hour[i].will_it_snow;
       chanceS = cast.hour[i].chance_of_snow;
       icon = cast.hour[i].condition.icon;
+      if (c1 > 11 && i > 0)
+         merid = 'PM';
+      if (c1 > 12) {
+         c1 = k++;
+      }
+      if (c1 == 0)
+         c1 = 12;
   
       p = document.createElement('strong');
       q = document.createElement('div');
       r = document.createElement('br');
-      p.innerHTML = c1+':- Temperature: '+c2+'°C<br>Condition: '+c3;
+      p.innerHTML = `${c1} ${merid}:- Temperature: ${c2}°C<br>Condition: ${c3}`;
       if (c4 == 1063 || c4 == 1087 || c4 == 1069|| (c4 >= 1150 && c4 <= 1207) || (c4 >= 1240 && c4 <= 1252) || c4 == 1273 || c4 == 1276)
          p.innerHTML += `<br>Chance:- ${chanceR}%`;
       else if ((c4 >= 1066 && c4 <= 1072 && c4 != 1069) || c4 == 1114 || c4 == 1117 || (c4 >= 1210 && c4 <= 1237) || (c4 >= 1255 && c4 <= 1264) || c4 == 1279 || c4 == 1282)
