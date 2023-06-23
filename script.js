@@ -87,9 +87,8 @@ as2 = () => {
       icon = cast.hour[i].condition.icon;
       if (c1 > 11 && i > 0)
          merid = 'PM';
-      if (c1 > 12) {
+      if (c1 > 12)
          c1 = k++;
-      }
       if (c1 == 0)
          c1 = 12;
   
