@@ -1,4 +1,4 @@
-w = '20.252346,85.802773', op = 0, cnt = 0, j = 0, merid = 'AM';
+w = '20.252346,85.802773', op = 0, cnt = 0, j = 0;
 
 m = () => {
    fetch(`https://api.weatherapi.com/v1/forecast.json?q=${w}&key=df1745f8c6cc4466bf545635232304&alerts=yes&aqi=yes&days=3`)
@@ -85,8 +85,10 @@ as2 = () => {
       probS = cast.hour[i].will_it_snow;
       chanceS = cast.hour[i].chance_of_snow;
       icon = cast.hour[i].condition.icon;
-      if (c1 > 11 && i > 0)
+      if (c1 > 11)
          merid = 'PM';
+      else
+         merid = 'AM';
       if (c1 > 12)
          c1 = k++;
       if (c1 == 0)
