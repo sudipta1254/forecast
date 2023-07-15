@@ -1,9 +1,27 @@
 w = '20.252346,85.802773', op = 0, cnt = 0, j = 0;
 
-m = () => {
+main = () => {
    fetch(`https://api.weatherapi.com/v1/forecast.json?q=${w}&key=df1745f8c6cc4466bf545635232304&alerts=yes&aqi=yes&days=3`)
      .then(response => response.json())
      .then(data => {
+         if(Object.keys(data).length == 1) {
+            code = data.error.code, msg = data.error.message;
+            if(code == 1002)
+               alert(msg);
+            else if (code == 1003)
+               alert('Please enter location to continue!');
+            else if (code == 1005)
+               alert(msg);
+            else if (code == 1006)
+               alert(msg);
+            else if (code == 2006)
+               alert(msg);
+            else if (code == 2007)
+               alert(msg);
+            else if (code == 2008)
+               alert(msg);
+            return;
+         }
          loc = data.location;
          cur = data.current;
          fore = data.forecast.forecastday;
@@ -22,7 +40,7 @@ m = () => {
        alert(error);
      }); 
 }
-m();
+main();
 
 as1 = () => {
    time();
@@ -172,15 +190,11 @@ alt = () => {
 
 get = () => {
    w = document.getElementById("txt").value;
-   if (w == '') {
-      alert('Enter location!');
-      return;
-   }
    op = document.getElementById("no").value;
    document.querySelector('.i2').innerHTML = '';
    document.querySelector('.d5').innerHTML = '';
    document.querySelector('.d6').innerHTML = '';
-   m();
+   main();
 }
 
 time = () => {
