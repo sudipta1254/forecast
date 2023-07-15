@@ -57,7 +57,7 @@ button:active {
    transform: scale(0.9);
    transition: all 0.4s;
 }
-#check {
+#frcst, #aqi, #alrt {
     margin: 19px 45px 0px 0px;
 }
 .head {
