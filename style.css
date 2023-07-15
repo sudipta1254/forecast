@@ -32,6 +32,12 @@ hr {
     height: 60px;
     margin: -330px auto 0;
 }
+.i2 {
+   text-align: center;
+}
+#i2 {
+   margin: auto;
+}
 #txt, #no {
     color: White;
     background: Black;
