@@ -88,6 +88,18 @@ i {
     color: white;
     font-size: 25px;
 }
+a {
+   color: white;
+}
+#sig:hover {
+   color: Tomato;
+   transition: .4s;
+   letter-spacing: 1px;
+}
+footer{
+   text-align: center;
+   margin: 25px 0 15px;
+}
 
 .spin {
    color: #0095ff;
