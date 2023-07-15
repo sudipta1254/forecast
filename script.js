@@ -122,6 +122,7 @@ as2 = () => {
          p.innerHTML += `<br>Chance:- ${chanceR}%`;
       else if ((c4 >= 1066 && c4 <= 1072 && c4 != 1069) || c4 == 1114 || c4 == 1117 || (c4 >= 1210 && c4 <= 1237) || (c4 >= 1255 && c4 <= 1264) || c4 == 1279 || c4 == 1282)
          p.innerHTML += `<br>Chance:- ${chanceS}%`;
+      q.id = 'i2';
       q.style.width = '60px';
       q.style.height = '60px';
       q.style.background = `url(${icon})`;
