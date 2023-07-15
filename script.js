@@ -100,8 +100,10 @@ as2 = () => {
       c4 = cast.hour[i].condition.code;
       probR = cast.hour[i].will_it_rain;
       chanceR = cast.hour[i].chance_of_rain;
+      if(chanceR == 0) chanceR++;
       probS = cast.hour[i].will_it_snow;
       chanceS = cast.hour[i].chance_of_snow;
+      if(chanceR == 0) chanceR++;
       icon = cast.hour[i].condition.icon;
       if (c1 > 11)
          merid = 'PM';
