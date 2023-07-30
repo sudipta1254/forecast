@@ -3,6 +3,7 @@ body {
     background: #212121;
     font-family: Celine;
     font-size: 20px;
+    font-variant-ligatures: common-ligatures;
 }
 hr {
     width: 50%;
