@@ -1,7 +1,7 @@
 body {
     color: white ;
     background: #212121;
-    font-family: Italiana;
+    font-family: Celine;
     font-size: 20px;
 }
 hr {
@@ -129,4 +129,8 @@ a {
 @font-face {
     font-family: 'Italiana';
     src: url('Italiana-Regular.woff');
+}
+@font-face {
+    font-family: 'Celine';
+    src: url('CelineSans.otf');
 }
