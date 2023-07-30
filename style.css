@@ -2,7 +2,7 @@ body {
     color: white ;
     background: #212121;
     font-family: Celine;
-    font-size: 20px;
+    font-size: 22px; /*20*/
     font-variant-ligatures: common-ligatures;
 }
 hr {
