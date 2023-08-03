@@ -66,7 +66,7 @@ as1 = () => {
    i1.style.background = `url(${icon})`;
    if (screen.width <= 768)
       i1.style.margin = '-40px auto 0';
-   if (day == 1)
+   if (day)
       i.className = 'las la-sun';
    else
       i.className = 'fa-regular fa-moon fa-1x';
@@ -85,10 +85,17 @@ as2 = () => {
    document.querySelector('.t5').innerHTML = cur.temp_c+'°C';
    document.querySelector('.d3').style.display = 'none';
    document.querySelector('.d4').style.display = 'block';
+   if(fore[0].day.daily_will_it_rain) {
+      precip = document.getElementById('precip');
+      precip.style.display = 'block';
+      precip.innerHTML = `Total precipitation: <strong>${fore[0].day.totalprecip_mm} mm<strong>`;
+   } else
+      precip.style.display = 'none';
+   
    icon = cur.condition.icon;
    day = cur.is_day;
    ik = document.querySelectorAll('i');
-   if(day == 1)
+   if(day)
       ik[1].className = 'las la-sun'
    else
       ik[1].className = 'fa-regular fa-moon fa-1x';
