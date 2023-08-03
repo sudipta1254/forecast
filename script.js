@@ -50,7 +50,7 @@ as1 = () => {
    document.querySelector('.s4').innerHTML = cur.temp_c+'°C';
    document.querySelector('.s5').innerHTML = cur.condition.text;
    document.querySelector('.s6').innerHTML = cur.feelslike_c+'°C';
-   document.querySelector('.s7').innerHTML = cur.wind_kph+' KMPH('+cur.wind_degree+'° - '+cur.wind_dir+')';
+   document.querySelector('.s7').innerHTML = cur.wind_kph+' KM/H ('+cur.wind_degree+'° - '+cur.wind_dir+')';
    document.querySelector('.s8').innerHTML = cur.gust_kph+' KMPH';
    document.querySelector('.s9').innerHTML = cur.pressure_mb+' hPa';
    document.querySelector('.s10').innerHTML = cur.humidity+'%';
