@@ -1,7 +1,7 @@
 body {
     color: white ;
     background: #212121;
-    font-family: Bloom;
+    font-family: Disya;
     font-size: 22px; /*20*/
     font-variant-ligatures: common-ligatures;
 }
@@ -142,10 +142,6 @@ a {
 @font-face {
     font-family: 'Barracuda';
     src: url('Barracuda-Light.ttf');
-}
-@font-face {
-    font-family: 'Bloom';
-    src: url('Bloom.otf');
 }
 @font-face {
     font-family: 'Disya';
