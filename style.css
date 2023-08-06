@@ -1,7 +1,7 @@
 body {
     color: white ;
     background: #212121;
-    font-family: Celine;
+    font-family: Barracuda;
     font-size: 22px; /*20*/
     font-variant-ligatures: common-ligatures;
 }
@@ -138,6 +138,22 @@ a {
 @font-face {
     font-family: 'Celine';
     src: url('CelineSans.otf');
+}
+@font-face {
+    font-family: 'Barracuda';
+    src: url('Barracuda-light.ttf');
+}
+@font-face {
+    font-family: 'Bloom';
+    src: url('Bloom.otf');
+}
+@font-face {
+    font-family: 'Disya';
+    src: url('Dear_Disya.ttf');
+}
+@font-face {
+    font-family: 'Roseblue';
+    src: url('Roseblue.ttf');
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
