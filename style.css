@@ -1,7 +1,7 @@
 body {
     color: white ;
     background: #212121;
-    font-family: Floral;
+    font-family: Celine;
     font-size: 22px; /*20*/
     font-variant-ligatures: common-ligatures;
 }
@@ -137,7 +137,7 @@ a {
 }
 @font-face {
     font-family: 'Celine';
-    src: url(../Fonts/CelineSans.otf) format(opentype);
+    src: url('../Fonts/CelineSans.otf') format(opentype);
 }
 @font-face {
     font-family: 'Barracuda';
