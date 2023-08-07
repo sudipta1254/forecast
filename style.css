@@ -1,7 +1,7 @@
 body {
     color: white ;
     background: #212121;
-    font-family: Roseblue;
+    font-family: Floral;
     font-size: 22px; /*20*/
     font-variant-ligatures: common-ligatures;
 }
@@ -133,23 +133,35 @@ a {
 
 @font-face {
     font-family: 'Italiana';
-    src: url('Italiana-Regular.woff');
+    src: url(../Fonts/Italiana-Regular.woff) format(woff);
 }
 @font-face {
     font-family: 'Celine';
-    src: url('CelineSans.otf');
+    src: url(../Fonts/CelineSans.otf) format(opentype);
 }
 @font-face {
     font-family: 'Barracuda';
-    src: url('Barracuda-Light.ttf');
+    src: url(../Fonts/Barracuda-Light.ttf) format(truetype);
 }
 @font-face {
     font-family: 'Disya';
-    src: url('Dear_Disya.ttf');
+    src: url(../Fonts/Dear-Disya.ttf) format(truetype);
 }
 @font-face {
     font-family: 'Roseblue';
-    src: url('Roseblue.ttf');
+    src: url(../Fonts/RoseBlue.ttf) format(truetype);
+}
+@font-face {
+    font-family: 'Mages';
+    src: url(../Fonts/Mages.otf) format(opentype);
+}
+@font-face {
+    font-family: 'Floral';
+    src: url(../Fonts/Floral\ Serif.ttf) format(truetype);
+}
+@font-face {
+    font-family: 'Pinewood';
+    src: url(../Fonts/HV\ Pinewood.otf) format(opentype);
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
