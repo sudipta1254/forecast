@@ -133,35 +133,35 @@ a {
 
 @font-face {
     font-family: 'Italiana';
-    src: url(../Fonts/Italiana-Regular.woff) format(woff);
+    src: url('../Fonts/Italiana-Regular.woff');
 }
 @font-face {
     font-family: 'Celine';
-    src: url('../Fonts/CelineSans.otf') format(opentype);
+    src: url('../Fonts/CelineSans.otf');
 }
 @font-face {
     font-family: 'Barracuda';
-    src: url(../Fonts/Barracuda-Light.ttf) format(truetype);
+    src: url('../Fonts/Barracuda-Light.ttf');
 }
 @font-face {
     font-family: 'Disya';
-    src: url(../Fonts/Dear-Disya.ttf) format(truetype);
+    src: url('../Fonts/Dear-Disya.ttf');
 }
 @font-face {
     font-family: 'Roseblue';
-    src: url(../Fonts/RoseBlue.ttf) format(truetype);
+    src: url('../Fonts/RoseBlue.ttf');
 }
 @font-face {
     font-family: 'Mages';
-    src: url(../Fonts/Mages.otf) format(opentype);
+    src: url('../Fonts/Mages.otf');
 }
 @font-face {
     font-family: 'Floral';
-    src: url(../Fonts/Floral\ Serif.ttf) format(truetype);
+    src: url('../Fonts/Floral\ Serif.ttf');
 }
 @font-face {
     font-family: 'Pinewood';
-    src: url(../Fonts/HV\ Pinewood.otf) format(opentype);
+    src: url('../Fonts/HV\ Pinewood.otf');
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
