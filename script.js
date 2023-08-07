@@ -208,11 +208,12 @@ get = () => {
 }
 
 time = () => {
-   s = loc.localtime.split(' ')[1].split(':');
+   d = (new Date(loc.localtime) - new Date(cur.last_updated))/60000;
+   /*s = loc.localtime.split(' ')[1].split(':');
    s = s[0] + s[1];
    c = cur.last_updated.split(' ')[1].split(':');
    c = c[0] + c[1];
-   d = +s - (+c);
+   d = +s - (+c); */
    return d == 0 ? 'Now' : d == 1 ? d+' minute ago' : d+' minutes ago';
 }
 
