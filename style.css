@@ -1,7 +1,7 @@
 body {
     color: white ;
     background: #212121;
-    font-family: Pinewood;
+    font-family: Evolve;
     font-size: 22px; /*20*/
     font-variant-ligatures: common-ligatures;
 }
@@ -162,6 +162,18 @@ a {
 @font-face {
     font-family: 'Pinewood';
     src: url('Fonts/HV\ Pinewood.otf');
+}
+@font-face {
+    font-family: 'Burdown';
+    src: url('Fonts/Burdown.ttf');
+}
+@font-face {
+    font-family: 'Faberge';
+    src: url('Fonts/Faberge.ttf');
+}
+@font-face {
+    font-family: 'Evolve';
+    src: url('Fonts/MadeEvolveLight.otf');
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
