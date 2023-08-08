@@ -1,7 +1,7 @@
 body {
     color: white ;
     background: #212121;
-    font-family: Pinewood;
+    font-family: Mages;
     font-size: 22px; /*20*/
     font-variant-ligatures: common-ligatures;
 }
@@ -97,7 +97,7 @@ i {
     top: 2%;
     right: 4%;
     color: white;
-    font-size: 25px;
+    font-size: 23px;
 }
 a {
    color: white;
