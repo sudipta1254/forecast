@@ -1,7 +1,7 @@
 body {
     color: white ;
     background: #212121;
-    font-family: Pinewood;
+    font-family: Morioka;
     font-size: 22px; /*20*/
     font-variant-ligatures: common-ligatures;
 }
@@ -172,8 +172,12 @@ a {
     src: url('Fonts/Faberge.ttf');
 }
 @font-face {
-    font-family: 'Evolve';
+    font-family: 'Morioka';
     src: url('Fonts/MadeEvolveLight.otf');
+}
+@font-face {
+    font-family: 'Evolve';
+    src: url('Fonts/Morioka.otf');
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
