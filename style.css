@@ -3,7 +3,6 @@ body {
     background: #212121;
     font-family: Morioka;
     font-size: 22px; /*20*/
-    font-variant-ligatures: common-ligatures;
 }
 hr {
     width: 50%;
@@ -172,11 +171,11 @@ a {
     src: url('Fonts/Faberge.ttf');
 }
 @font-face {
-    font-family: 'Morioka';
+    font-family: 'Evolve';
     src: url('Fonts/MadeEvolveLight.otf');
 }
 @font-face {
-    font-family: 'Evolve';
+    font-family: 'Morioka';
     src: url('Fonts/Morioka.otf');
 }
 /* Chrome, Safari, Edge, Opera */
