@@ -1,7 +1,7 @@
 body {
     color: white ;
     background: #212121;
-    font-family: Morioka;
+    font-family: Bagina;
     font-size: 22px; /*20*/
 }
 hr {
@@ -175,8 +175,8 @@ a {
     src: url('Fonts/MadeEvolveLight.otf');
 }
 @font-face {
-    font-family: 'Morioka';
-    src: url('Fonts/Stockers.ttf');
+    font-family: 'Bagina';
+    src: url('Fonts/Bagina.woff2');
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
