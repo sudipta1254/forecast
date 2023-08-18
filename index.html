@@ -25,8 +25,8 @@
     </div>
     <div class='d1'>
         <div class='d2'>
-           <input type='text' id='txt' placeholder='Location' autofocus></input>
-           <input type='number' id='no' placeholder='0 - 2' disabled></input>
+           <input type='text' id='txt' placeholder='Location' autofocus>
+           <input type='number' id='no' placeholder='0 - 2' disabled>
            <button type='button' onclick='get()'>Search</button><br>
            <label for="frcst">Forecast</label>
            <input type="checkbox" id="frcst" class='ck1'>
@@ -34,6 +34,7 @@
            <input type="checkbox" id="aqi" class='ck2'>
            <label for="alrt">Alerts</label>
            <input type="checkbox" id="alrt" class='ck3'>
+           <input type='color' onchange='accent()'>
         </div>
         <div class='d3'> 
            Location: <strong class="s1"></strong><br>
