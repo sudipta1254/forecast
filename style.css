@@ -179,7 +179,7 @@ a {
 }
 @font-face {
     font-family: 'Bagina';
-    src: url('Fonts/CiaoMilan.ttf');/*Bagina.woff2*/
+    src: url('Fonts/Bagina.woff2');/*Bagina.woff2*/
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
