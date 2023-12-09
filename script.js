@@ -1,4 +1,5 @@
 w = '20.252346,85.802773', op = 0, cnt = 0, j = 0;
+var inp = document.querySelectorAll('input');
 
 main = () => {
    fetch(`https://api.weatherapi.com/v1/forecast.json?q=${w}&key=df1745f8c6cc4466bf545635232304&alerts=yes&aqi=yes&days=3`)
@@ -50,7 +51,7 @@ as1 = () => {
    document.querySelector('.s4').innerHTML = cur.temp_c+'°C';
    document.querySelector('.s5').innerHTML = cur.condition.text;
    document.querySelector('.s6').innerHTML = cur.feelslike_c+'°C';
-   document.querySelector('.s7').innerHTML = cur.wind_kph+' KM/H ('+cur.wind_degree+'° - '+cur.wind_dir+')';
+   document.querySelector('.s7').innerHTML = cur.wind_kph+' KM/H ('+cur.wind_degree+'° - '+cur.wind_dir+') <span class="fa-solid fa-location-arrow" style="rotate:'+(cur.wind_degree-45)+'deg"></span>';
    document.querySelector('.s8').innerHTML = cur.gust_kph+' KMPH';
    document.querySelector('.s9').innerHTML = cur.pressure_mb+' hPa';
    document.querySelector('.s10').innerHTML = cur.humidity+'%';
@@ -228,6 +229,12 @@ theme = () => {
    else
       q.style.color = 'white';
    j++;
+}
+function accent() {
+   var ob = (a) => {
+      a.style.accentColor = inp[5].value;
+   }
+   ob(inp[2]); ob(inp[3]); ob(inp[4]);
 }
 
 setInterval(() => {

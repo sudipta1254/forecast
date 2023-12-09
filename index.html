@@ -16,17 +16,17 @@
     <link rel="stylesheet" href="style.css">
     <title>Weather Service</title>
 </head>
-<body oncontextmenu='return false'>
+<body>
     <div class='theme'>
         <span class="thm cil cil-sun" onclick='theme()'></span>
     </div>
-    <div class='head'>Weather Service
-        <span class="fa-solid fa-certificate fa-1x spin"></span>
+    <div class='head'>
+        Weather Service
     </div>
     <div class='d1'>
         <div class='d2'>
-           <input type='text' id='txt' placeholder='Location' autofocus></input>
-           <input type='number' id='no' placeholder='0 - 2' disabled></input>
+           <input type='text' id='txt' placeholder='Location' autofocus>
+           <input type='number' id='no' placeholder='0 - 2' disabled>
            <button type='button' onclick='get()'>Search</button><br>
            <label for="frcst">Forecast</label>
            <input type="checkbox" id="frcst" class='ck1'>

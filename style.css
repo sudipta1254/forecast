@@ -1,7 +1,7 @@
 body {
     color: white ;
     background: #212121;
-    font-family: Morioka;
+    font-family: Bagina;
     font-size: 22px; /*20*/
 }
 hr {
@@ -66,6 +66,9 @@ button {
 button:active {
    transform: scale(0.9);
    transition: all 0.4s;
+}
+input {
+    accent-color: #F55050;
 }
 label {
     margin: 19px 0 0 35px;
@@ -175,8 +178,8 @@ a {
     src: url('Fonts/MadeEvolveLight.otf');
 }
 @font-face {
-    font-family: 'Morioka';
-    src: url('Fonts/Villages.ttf');
+    font-family: 'Bagina';
+    src: url('Fonts/La\ Orleans.ttf');/*Bagina.woff2*/
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
